@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_title">
+
+    <fragment
+        android:id="@+id/fragment_title"
+        android:name="com.example.fragenbogenfragment.fragment_title"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_fragment_title_to_fragment_game"
+            app:destination="@id/fragment_game" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_game"
+        android:name="com.example.fragenbogenfragment.fragment_game"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_fragment_game_to_gamewonfragment"
+            app:destination="@id/gamewonfragment" />
+        <action
+            android:id="@+id/action_fragment_game_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamewonfragment"
+        android:name="com.example.fragenbogenfragment.gamewonfragment"
+        android:label="fragment_gamewonfragment"
+        tools:layout="@layout/fragment_gamewonfragment" />
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.fragenbogenfragment.gameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.fragenbogenfragment.fragment_about"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.fragenbogenfragment.fragment_setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
