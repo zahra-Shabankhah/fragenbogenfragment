@@ -40,6 +40,12 @@ class fragment_title : Fragment() {
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController()) ||
                 super.onOptionsItemSelected(item)
 
+      /*  or
+        when(item.itemId){
+            R.id.aboutFragment -> do sth
+
+        }*/
+
     }
 
     override fun onDestroyView() {
